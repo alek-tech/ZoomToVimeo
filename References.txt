@@ -1,0 +1,14 @@
+# CREATE ZOOM SERVER TO SERVER OAUTH APP( FOLLOW UNTIL STEP 7 AND ADD CREDENTIALS TO .ENV FILE) 
+https://devforum.zoom.us/t/jwt-app-vs-server-to-server-oauth-app/74499
+
+https://devforum.zoom.us/t/randomly-receiving-invalid-access-token-for-server-to-server-oauth/74432/6
+
+https://github.com/patrickloeber/google-sheets-finance-automation
+
+https://github.com/ricardorodrigues-ca/zoom-recording-downloader
+
+https://developer.vimeo.com/api/upload/videos
+
+https://developer.vimeo.com/api/reference/folders#create_project
+
+https://developer.vimeo.com/guidelines/rate-limiting

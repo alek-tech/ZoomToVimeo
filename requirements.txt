@@ -1,0 +1,8 @@
+dotenv
+vimeo
+base64
+requests
+tqdm
+openpyxl
+pathvalidate
+pandas
