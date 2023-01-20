@@ -1,6 +1,5 @@
 python-dotenv
 vimeo
-base64
 requests
 tqdm
 openpyxl
