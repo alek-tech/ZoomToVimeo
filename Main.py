@@ -1,4 +1,4 @@
-# !/usr/bin/env python3.11
+# !/usr/bin/env python3.9
 # Program Name: ZoomToVimeo.py
 
 # Description:  ZoomToVimeo is a Python script that uses Zoom and Vimeo's API to download
