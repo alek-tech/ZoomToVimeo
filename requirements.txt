@@ -1,3 +1,7 @@
+dateutils
+progress
+progressbar
+python-dateutil
 python-dotenv
 vimeo
 requests
@@ -5,8 +9,5 @@ tqdm
 openpyxl
 pathvalidate
 pandas
-dateutils
-progress
-progressbar
-python-dateutil
+
 
