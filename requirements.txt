@@ -5,3 +5,8 @@ tqdm
 openpyxl
 pathvalidate
 pandas
+dateutils
+progress
+progressbar
+python-dateutil
+
