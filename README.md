@@ -44,7 +44,7 @@ Installation & Setup
 
      DOWNLOAD_DIRECTORY = r'PATH TO FOLDER'
 
-6. Run file with '''sh python Main.py'''
+6. Run file with ```sh python Main.py ```
 ------------------------------------------------------------------------------------------
 
 Usage
