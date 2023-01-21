@@ -6,7 +6,7 @@ python-dateutil
 requests
 tqdm
 python-dotenv
-Pyvimeo
+PyVimeo
 openpyxl
 pathvalidate
 
