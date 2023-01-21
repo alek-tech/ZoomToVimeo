@@ -54,13 +54,13 @@ The program has 2 main options. "ALL" and "SINGLE".
 
  - If you want to download and upload zoom recordings from all users of this zoom account type "all" at the 3rd question of the Initial inputs.
 
- - If you want to download recordings only from specific users, go to the single_users.xlsx file in the directory folder and add the users email under the "Email" cell(column A), 
+ - If you want to download recordings only from specific users, go to the single_users.xlsx file in the ZoomToVimeo folder and add the users email under the "Email" cell(column A), 
    one email for each cell. You can also add a Vimeo folder id under the "Folder" cell(column C) if you wish to upload the specific user recordings to an existing Vimeo folder. 
 
 
 At startup the program gives you 3 options:
 
- 1. If you wish to upload the downloaded recordings in a specific Vimeo folder, type "yes" and provide the folder id which you can see in the Vimeo folder url.( IN THIS CASE THIS HAS PRIORITY)
+ 1. If you wish to upload the downloaded recordings in a specific Vimeo folder, type "yes" and provide the folder id which you can see in the Vimeo folder url.
 
  2. If you want to download recordings made from a certain date forward. type "yes" and input date.
 
