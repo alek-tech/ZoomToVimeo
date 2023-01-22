@@ -15,7 +15,7 @@ Vimeo upload options include:
  - Upload Recordings to specific folder or folders.
 
 The original template was taken from https://github.com/ricardorodrigues-ca/zoom-recording-downloader 
-I modified it substantially for the specific needs of a European Univerity and since i had no serious repositories yet,
+I modified it substantially for the specific needs of a European University and since i had no serious repositories yet,
 i decided to upload the program. Hope it can make your life easier :)
 
 --------------------------------------------------------------------------------------
