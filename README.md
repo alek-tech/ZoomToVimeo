@@ -3,7 +3,7 @@ Python program to download Zoom cloud recordings, save them locally and upload t
 
 Description:
 
-ZoomToVimeo is a Python script that uses Zoom's and Vimeo's API to download specific or all cloud recordings from a Zoom Businnes account, 
+ZoomToVimeo is a Python program that uses Zoom's and Vimeo's API to download specific or all cloud recordings from a Zoom Businnes account, 
 save them locally and then upload them to a Vimeo Businnes account. All via simple command line inputs.
 
 Download options for Zoom videos include:
@@ -13,6 +13,11 @@ Download options for Zoom videos include:
 
 Vimeo upload options include:
  - Upload Recordings to specific folder or folders.
+
+The original template was taken from https://github.com/ricardorodrigues-ca/zoom-recording-downloader 
+I modified it substantially for the specific needs of a European Univerity and since i had no serious repositories yet,
+i decided to upload the program. Hope it can make your life easier :)
+
 --------------------------------------------------------------------------------------
 
 Attention: 
