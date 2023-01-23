@@ -49,7 +49,7 @@ Installation & Setup
 
      DOWNLOAD_DIRECTORY = r'PATH TO FOLDER'
 
-6. Run file with ```python Main.py```
+6. Run file with command ```python Main.py```
 ------------------------------------------------------------------------------------------
 
 Usage
