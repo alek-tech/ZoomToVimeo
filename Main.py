@@ -52,6 +52,7 @@ class ZoomToVimeo():
     RECORDING_START_MONTH = 1
     RECORDING_START_DAY = 1
     RECORDING_END_DATE = date.today()
+    SINGLES_PATH = os.sep.join([os.path.dirname(os.path.realpath(__file__)), "Single_users.xlsx"])
 
     load_dotenv()
 
@@ -169,7 +170,7 @@ class ZoomToVimeo():
                                         
     def single(self):
         #LOOP THROUGH EXCEL FILE WITH EMAIL - FOLDER_ID PAIRS
-        df = pd.read_excel(r'C:\Users\alek\Desktop\ZoomToVimeo\Single_users.xlsx')#, sheet_name = "Sheet1")  
+        df = pd.read_excel(fr"{self.SINGLES_PATH}")#, sheet_name = "Sheet1")
         for i, row in df.iloc[0:].iterrows():    
             sleep(1.1) 
             em = row['Email']
