@@ -1,0 +1,29 @@
+<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Zoom Box -->
+  <rect x="50" y="60" width="160" height="80" rx="10" fill="#2D8CFF" />
+  <text x="130" y="105" text-anchor="middle" fill="white" font-family="Arial" font-size="16">Zoom Cloud</text>
+  <text x="130" y="125" text-anchor="middle" fill="white" font-family="Arial" font-size="12">Recordings</text>
+
+  <!-- Arrow 1 -->
+  <path d="M 220 100 L 320 100" stroke="#666" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Script Box -->
+  <rect x="330" y="60" width="160" height="80" rx="10" fill="#4CAF50" />
+  <text x="410" y="105" text-anchor="middle" fill="white" font-family="Arial" font-size="16">ZoomToVimeo</text>
+  <text x="410" y="125" text-anchor="middle" fill="white" font-family="Arial" font-size="12">Python Script</text>
+
+  <!-- Arrow 2 -->
+  <path d="M 500 100 L 600 100" stroke="#666" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Vimeo Box -->
+  <rect x="610" y="60" width="160" height="80" rx="10" fill="#00ADEF" />
+  <text x="690" y="105" text-anchor="middle" fill="white" font-family="Arial" font-size="16">Vimeo Business</text>
+  <text x="690" y="125" text-anchor="middle" fill="white" font-family="Arial" font-size="12">Account</text>
+
+  <!-- Arrow Marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 L2,5 Z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>
