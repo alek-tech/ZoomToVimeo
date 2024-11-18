@@ -9,7 +9,7 @@ Automate the process of downloading Zoom cloud recordings and uploading them to 
 
 ## Workflow
 
-![ZoomToVimeo Workflow](workflow.svg)
+![ZoomToVimeo Workflow](workflow-diagram.svg)
 
 ## Features
 
