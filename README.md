@@ -1,85 +1,71 @@
 # ZoomToVimeo
-Python program to download Zoom cloud recordings, save them locally and upload them to a Vimeo Businnes Account.
 
-Description:
+[![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Zoom API](https://img.shields.io/badge/Zoom-API-2D8CFF)](https://marketplace.zoom.us/docs/api-reference/introduction)
+[![Vimeo API](https://img.shields.io/badge/Vimeo-API-00ADEF)](https://developer.vimeo.com/api/reference)
 
-ZoomToVimeo is a Python program that uses Zoom's and Vimeo's API to download specific or all cloud recordings from a Zoom Businnes account, 
-save them locally and then upload them to a Vimeo Businnes account. All via simple command line inputs.
+Automate the process of downloading Zoom cloud recordings and uploading them to Vimeo Business accounts via command line interface.
 
-Download options for Zoom videos include:
- - Selecting specific users or all users.
- - Selecting only recordings made from a certin date forward.
- - Downloading only specific file types for example 'shared_screen_with_speaker_view' from each recording.
+## Workflow
 
-Vimeo upload options include:
- - Upload Recordings to specific folder or folders.
+![ZoomToVimeo Workflow](workflow.svg)
 
-The original template was taken from https://github.com/ricardorodrigues-ca/zoom-recording-downloader 
-I modified it substantially for the specific needs of a European University and since i had no serious repositories yet,
-i decided to upload the program. Hope it can make your life easier :)
+## Features
 
---------------------------------------------------------------------------------------
+### Zoom Downloads
+- Download recordings from all users or specific users
+- Filter recordings by date
+- Select specific recording types (e.g., 'shared_screen_with_speaker_view')
+- Local storage of downloaded recordings
 
-Attention: 
+### Vimeo Uploads
+- Upload to specific folders
+- Automatic name sanitization (128-char limit, special character removal)
+- Batch processing capabilities
 
- - You will need Python 3.6 or greater
+## Prerequisites
+- Python 3.6+
+- Zoom Developer account with Server-to-Server OAuth app
+- Vimeo Business account with OAuth app
+- See `reference.txt` for setup guides
 
- - You will require a Zoom Developer account to create a Zoom Server to Server OAUTH app.
-   as well as a Vimeo Businnes account to create the correspoding OAUTH app there.
+## Installation
 
- - If you haven't made the apps already check the links in the reference.txt file for tutorials and guides.
-----------------------------------------------------------------------------------------
-Important note:
+```bash
+git clone https://github.com/alek-tech/ZoomToVimeo
+cd ZoomToVimeo
+pip3 install -r requirements.txt
+```
 
- - Names of recordings uploaded to Vimeo will be cut to 128 characters if longer since this is the Vimeo Video name limit.
+## Configuration
+1. Add Zoom and Vimeo credentials to `.env` file
+2. Set `DOWNLOAD_DIRECTORY` in `Main.py`
 
- - Strange characters will also be removed from names in order to be able to save them correctly on all platforms.
---------------------------------------------------------------------------------------------
-Installation & Setup
+## Usage
 
-1. $ git clone https://github.com/alek-tech/ZoomToVimeo
+### Basic Operation
+Run `python Main.py` and follow the prompts:
+1. Specify Vimeo folder ID (optional)
+2. Set date filter (optional)
+3. Choose operation mode:
+   - `all`: Process all users
+   - `single`: Process specific users listed in `single_users.xlsx`
 
-2. $ cd ZoomToVimeo
+### Custom Configuration
+- **Single User Mode**: Add user emails to `single_users.xlsx` (Column A)
+  - Optionally specify Vimeo folder IDs (Column C)
+- **Download-Only Mode**: Comment out `all_upload` or `single_upload` in `Main.py`
+- **File Type Filtering**: Modify `get_recordings_files()` in `Functions.py`
 
-3. $ pip3 install -r requirements.txt
+## Known Issues
+- Interrupted uploads create partial files on Vimeo requiring manual deletion
 
-4. Open the .env file and add your Zoom and Vimeo credentials between the quotation marks.
+## Attribution
+Based on [zoom-recording-downloader](https://github.com/ricardorodrigues-ca/zoom-recording-downloader), modified for European University requirements.
 
-5. Open the Main.py file and write the path to the folder where you wish to download the recordings in the following variable:
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-     DOWNLOAD_DIRECTORY = r'PATH TO FOLDER'
-
-6. Run file with command ```python Main.py```
-------------------------------------------------------------------------------------------
-
-Usage
-
-
-The program has 2 main options. "ALL" and "SINGLE".
-
- - If you want to download and upload zoom recordings from all users of this zoom account type "all" at the 3rd question of the Initial inputs.
-
- - If you want to download recordings only from specific users, go to the single_users.xlsx file in the ZoomToVimeo folder and add the users email under the "Email" cell(column A), 
-   one email for each cell. You can also add a Vimeo folder id under the "Folder" cell(column C) if you wish to upload the specific user recordings to an existing Vimeo folder. 
-
-
-At startup the program gives you 3 options:
-
- 1. If you wish to upload the downloaded recordings in a specific Vimeo folder, type "yes" and provide the folder id which you can see in the Vimeo folder url.
-
- 2. If you want to download recordings made from a certain date forward. type "yes" and input date.
-
- 3. Choose either "all" or "single" which are the options described above.
---------------------------------------------------------------------------------------------
-
-Other options:
-
- - If you only want to download the recordings without uploading them to Vimeo, open the Main.py file and comment out the functions all_upload or single_upload 
-   depending on which of the 2 options you're gonna be using.
-   
- - To download only recordings of specific file types for example 'shared_screen_with_speaker_view', open Functions.py, go to function "get_recordings_files" (around line 125)
-   and follow the short instructions on how to enable the file type filter.
---------------------------------------------------------------------------------------------
-
-Bugs: If the scripts is interrupted while a recording is being uploaded, the partial recording will be uploaded and will have to be deleted manually. 
-
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
