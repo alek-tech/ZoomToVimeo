@@ -38,19 +38,19 @@ cd ZoomToVimeo
 pip3 install -r requirements.txt
 ```
 
-## Configuration
+
+## Setup 
 1. Add Zoom and Vimeo credentials to `.env` file
-2. Set `DOWNLOAD_DIRECTORY` in `Main.py`
-
+2. Open Main.py and set the path to the folder where you wish to download the recordings in the following variable:
+   DOWNLOAD_DIRECTORY = r'PATH TO FOLDER'
+   
 ## Usage
-
-### Basic Operation
-Run `python Main.py` and follow the prompts:
-1. Specify Vimeo folder ID (optional)
-2. Set date filter (optional)
-3. Choose operation mode:
+1.Run `python Main.py` and follow the prompts:
+2. Specify Vimeo upload folder ID (optional)
+3. Set date filter (optional)
+4. Choose operation mode:
    - `all`: Process all users
-   - `single`: Process specific users listed in `single_users.xlsx`
+   - `single`: Process only specific users listed in `single_users.xlsx`
 
 ### Custom Configuration
 - **Single User Mode**: Add user emails to `single_users.xlsx` (Column A)
@@ -59,7 +59,7 @@ Run `python Main.py` and follow the prompts:
 - **File Type Filtering**: Modify `get_recordings_files()` in `Functions.py`
 
 ## Known Issues
-- Interrupted uploads create partial files on Vimeo requiring manual deletion
+- Manually interrupted uploads create partial files on Vimeo requiring manual deletion
 
 ## Attribution
 Based on [zoom-recording-downloader](https://github.com/ricardorodrigues-ca/zoom-recording-downloader), modified for European University requirements.
