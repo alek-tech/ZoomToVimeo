@@ -45,7 +45,7 @@ pip3 install -r requirements.txt
    DOWNLOAD_DIRECTORY = r'PATH TO FOLDER'
    
 ## Usage
-1.Run `python Main.py` and follow the prompts:
+1. Run `python Main.py` and follow the prompts:
 2. Specify Vimeo upload folder ID (optional)
 3. Set date filter (optional)
 4. Choose operation mode:
